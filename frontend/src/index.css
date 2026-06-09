@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wc-bg: #030814;
+  --wc-bg-2: #050d1c;
+  --wc-surface: #0a1324;
+  --wc-surface-2: #0d1830;
+  --wc-border: #16294a;
+  --wc-border-soft: #0f1d35;
+  --wc-text: #e6f1ff;
+  --wc-text-soft: #94b3da;
+  --wc-text-dim: #5a7aa3;
+
+  --wc-blue: #38bdf8;
+  --wc-blue-soft: rgba(56, 189, 248, 0.18);
+  --wc-cyan: #22d3ee;
+  --wc-cyan-soft: rgba(34, 211, 238, 0.18);
+  --wc-indigo: #6366f1;
+  --wc-indigo-soft: rgba(99, 102, 241, 0.18);
+  --wc-green: #34d399;
+  --wc-green-soft: rgba(52, 211, 153, 0.18);
+  --wc-amber: #f59e0b;
+  --wc-amber-soft: rgba(245, 158, 11, 0.18);
+  --wc-pink: #ec4899;
+  --wc-pink-soft: rgba(236, 72, 153, 0.18);
+  --wc-orange: #fb923c;
+  --wc-orange-soft: rgba(251, 146, 60, 0.15);
+
+  /* shadcn defaults (dark, cyan-tinted) */
+  --background: 215 60% 4%;
+  --foreground: 210 40% 96%;
+  --card: 217 55% 7%;
+  --card-foreground: 210 40% 96%;
+  --popover: 217 55% 7%;
+  --popover-foreground: 210 40% 96%;
+  --primary: 199 89% 60%;
+  --primary-foreground: 215 60% 5%;
+  --secondary: 217 40% 14%;
+  --secondary-foreground: 210 40% 96%;
+  --muted: 217 40% 16%;
+  --muted-foreground: 213 24% 70%;
+  --accent: 217 40% 16%;
+  --accent-foreground: 210 40% 96%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 96%;
+  --border: 217 40% 18%;
+  --input: 217 40% 18%;
+  --ring: 199 89% 60%;
+  --radius: 0.75rem;
+}
+
+html,
+body,
+#root {
+  background: var(--wc-bg);
+  color: var(--wc-text);
+  font-family: "Rajdhani", "Chakra Petch", system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    radial-gradient(1200px 600px at 12% -10%, rgba(56, 189, 248, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(34, 211, 238, 0.14), transparent 55%),
+    radial-gradient(900px 700px at 50% 110%, rgba(99, 102, 241, 0.10), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Premium grid pattern overlay */
+.wc-grid::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 40%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Display font for headings */
+.font-display {
+  font-family: "Audiowide", "Bruno Ace SC", "Russo One", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-mono-wc {
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+/* Neon text accents */
+.neon-blue {
+  background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 45%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 38px rgba(56, 189, 248, 0.35);
+  filter: drop-shadow(0 0 18px rgba(56, 189, 248, 0.55));
+}
+.neon-indigo {
+  color: var(--wc-indigo);
+  text-shadow:
+    0 0 12px rgba(99, 102, 241, 0.55),
+    0 0 32px rgba(99, 102, 241, 0.25);
+}
+.neon-pink {
+  background: linear-gradient(135deg, #f0abfc 0%, #ec4899 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 38px rgba(236, 72, 153, 0.35);
+  filter: drop-shadow(0 0 18px rgba(236, 72, 153, 0.45));
+}
+.neon-orange {
+  color: var(--wc-orange);
+  text-shadow:
+    0 0 12px rgba(251, 146, 60, 0.55),
+    0 0 32px rgba(251, 146, 60, 0.25);
+}
+.neon-green {
+  color: var(--wc-green);
+  text-shadow:
+    0 0 10px rgba(52, 211, 153, 0.55),
+    0 0 32px rgba(52, 211, 153, 0.2);
+}
+.neon-cyan {
+  color: var(--wc-cyan);
+  text-shadow:
+    0 0 10px rgba(34, 211, 238, 0.55),
+    0 0 32px rgba(34, 211, 238, 0.18);
+}
+.neon-amber {
+  color: var(--wc-amber);
+  text-shadow:
+    0 0 12px rgba(245, 158, 11, 0.55),
+    0 0 32px rgba(245, 158, 11, 0.25);
+}
+
+/* Card surface */
+.wc-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)) ,
+    var(--wc-surface);
+  border: 1px solid var(--wc-border);
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wc-card-soft {
+  background: var(--wc-bg-2);
+  border: 1px solid var(--wc-border-soft);
+  border-radius: 14px;
+}
+
+.wc-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+}
+
+.wc-stat-divider {
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+}
+
+/* Animated underline for active nav */
+.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--wc-blue);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.85);
+  border-radius: 999px;
+}
+
+/* Subtle scan line on bracket cards */
+.scan-line {
+  position: relative;
+}
+.scan-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Pulsing live dot */
+@keyframes wcPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px currentColor; }
+  50% { opacity: 0.55; box-shadow: 0 0 18px currentColor; }
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--wc-blue);
+  color: var(--wc-blue);
+  display: inline-block;
+  animation: wcPulse 1.6s ease-in-out infinite;
+}
+
+/* Tab transition */
+.nav-link {
+  position: relative;
+  transition: color 180ms ease, transform 180ms ease;
+}
+.nav-link:hover {
+  color: var(--wc-text);
+}
+
+/* Champion glow */
+.champion-glow {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.18), transparent 65%),
+    linear-gradient(180deg, rgba(251, 191, 36, 0.08), rgba(251, 146, 60, 0.04));
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  box-shadow:
+    0 0 80px -10px rgba(251, 191, 36, 0.35),
+    inset 0 0 80px -30px rgba(251, 191, 36, 0.25);
+}
+
+/* Hide scrollbars on horizontal scroll containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Big country code watermark on team cards */
+.country-watermark {
+  position: absolute;
+  right: -8px;
+  top: 6px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 132px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+/* Bracket connectors */
+.bracket-line {
+  position: absolute;
+  background: transparent;
+  border-color: rgba(56, 189, 248, 0.35);
+  pointer-events: none;
+}
+.bracket-line-dashed {
+  background-image: linear-gradient(
+    to right,
+    rgba(56, 189, 248, 0.55) 50%,
+    transparent 0%
+  );
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  height: 2px;
+}
+.bracket-line-dashed-v {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(56, 189, 248, 0.55) 50%,
+    transparent 0%
+  );
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+  width: 2px;
+}
+
+/* Animated entrance */
+@keyframes wcFadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.wc-fade-up {
+  animation: wcFadeUp 0.5s ease-out both;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+}

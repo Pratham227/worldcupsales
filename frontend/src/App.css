@@ -1,0 +1,6 @@
+/* App-level CSS reserved for component-specific tweaks. */
+.App {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+}
