@@ -61,7 +61,7 @@ function Shell() {
 export default function App() {
   return (
     <div className="App wc-grid">
-      <BrowserRouter>
+      <BrowserRouter basename="/worldcupsales">
         <Shell />
       </BrowserRouter>
     </div>
