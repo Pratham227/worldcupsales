@@ -92,6 +92,8 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Ashwini", "leaderboard_name": "Ashwini Nikam"},
             {"label": "Manohar", "leaderboard_name": "Evana Manohar"},
             {"label": "Vighnesh", "leaderboard_name": "Vighnesh Iyer"},
+            {"label": "Shivam", "leaderboard_name": "Shivam Kumar"},
+            {"label": "Shruti k.", "leaderboard_name": "Shruti Kale"},
         ],
     },
     {
@@ -105,6 +107,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Priyanshu", "leaderboard_name": "Priyanshu Sharma"},
             {"label": "Gaurav", "leaderboard_name": "Gaurav Kadam"},
             {"label": "Amod", "leaderboard_name": "Amod Tripathi"},
+            {"label":"Shruti S.", "leaderboard_name": "Shruti Singh"},
         ],
     },
     {
@@ -117,7 +120,8 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Netra", "leaderboard_name": "Netra Chinta"},
             {"label": "Akshata", "leaderboard_name": "Akshata Shirawale"},
             {"label": "Diksh", "leaderboard_name": "Diksh Shaikh"},
-            {"label": "Bhagyalaxmi", "leaderboard_name": "Bhagyashree Palan"},
+            {"label": "Bhagyashree", "leaderboard_name": "Bhagyashree Palan"},
+            {"label": "Viraj", "leaderboard_name": "Viraj Mundhe"},
             
             
         ],
@@ -131,8 +135,10 @@ TEAMS: List[Dict[str, Any]] = [
         "members": [
             {"label": "Shamal", "leaderboard_name": "Shamal Dhanawade"},
             {"label": "Aanchal", "leaderboard_name": "Aachal Dahikar"},
-            {"label": "Harshit", "leaderboard_name": "Harshit Amuley"},
+            {"label": "Tausif", "leaderboard_name": "Tausif Sayyed "},
             {"label": "Kajal", "leaderboard_name": "Kajal Tiwari"},
+            {"label": "Ayesha B.", "leaderboard_name": "Ayesha Baig"},
+            {"label": "Prateek S.", "leaderboard_name": "Prateek Samantaray"},
             
         ],
     },
@@ -148,6 +154,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Ishita", "leaderboard_name": "Ishita Bahl"},
             {"label": "Shraddha", "leaderboard_name": "Shraddha Singh"},
             {"label": "Janhavi N.", "leaderboard_name": "Janhavi Nakshulwar"},
+            {"label": "Sakshi G.", "leaderboard_name": "Sakshi Gade"},
         ],
     },
     {
@@ -160,7 +167,9 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Sai", "leaderboard_name": "Sai Das"},
             {"label": "Astha", "leaderboard_name": "Astha Pande"},
             {"label": "Vijay", "leaderboard_name": "Vijay Badsiwal"},
-            {"label": "Vrushabraj", "leaderboard_name": "Vrushabraj Maharana"},
+            {"label": "Eram", "leaderboard_name": "Eram Shaikh"},
+            {"label": "Samriddh", "leaderboard_name": "Samriddh Singh"},
+            {"label": "Shraddha S.", "leaderboard_name": "Shraddha Surkute"},
         ],
     },
     {
@@ -174,6 +183,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Suwarna", "leaderboard_name": "Suwarnaprabha Dive"},
             {"label": "Mansi", "leaderboard_name": "Mansi Kamble"},
             {"label": "Shresth", "leaderboard_name": "Shreshth Kishore"},
+            {"label":"Sakshi ", "leaderboard_name": "Sakshi Das"},
         ],
     },
     {
@@ -187,6 +197,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Darshan", "leaderboard_name": "Darshan Gandhi"},
             {"label": "Sujita", "leaderboard_name": "Sujit Pal"},
             {"label": "Kanchan", "leaderboard_name": "Kanchan Pathare"},
+            {"label": "Sudhanshu", "leaderboard_name": "Sudhanshu Landekar"},
         ],
     },
 ]

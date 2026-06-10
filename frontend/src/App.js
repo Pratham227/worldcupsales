@@ -44,11 +44,11 @@ function Shell() {
       />
       <main className="relative">
         <Routes>
-          <Route path="/" element={<Navigate to="/teams" replace />} />
+          <Route path="/" element={<TeamsPage />} />
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/bracket" element={<BracketPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
-          <Route path="*" element={<Navigate to="/teams" replace />} />
+          <Route path="*" element={<TeamsPage />} />
         </Routes>
       </main>
       <footer className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 py-8 text-[10px] uppercase tracking-[0.22em] text-[var(--wc-text-dim)] text-center">
