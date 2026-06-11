@@ -169,7 +169,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Vijay", "leaderboard_name": "Vijay Badsiwal"},
             {"label": "Eram", "leaderboard_name": "Eram Shaikh"},
             {"label": "Samriddh", "leaderboard_name": "Samriddh Singh"},
-            {"label": "Shraddha S.", "leaderboard_name": "Shraddha Surkute"},
+            {"label": "Shraddha S.", "leaderboard_name": "Shraddha surkute"},
         ],
     },
     {
