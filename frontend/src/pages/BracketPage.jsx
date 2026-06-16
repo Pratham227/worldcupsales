@@ -231,7 +231,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
         <div className="hidden lg:block">
           <PhaseHeader
             label="SEMI FINAL 1"
-            dates="Jun 15 – 21"
+            dates="Jun 15 – 23"
             days="R1 vs R4"
             color="text-cyan-300"
           />
@@ -239,7 +239,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
         <div className="hidden lg:block">
           <PhaseHeader
             label="FINAL"
-            dates="Jun 22 – Jul 1"
+            dates="Jun 24 – Jul 1"
             days="10 days"
             color="text-amber-300"
             icon={Trophy}
@@ -248,7 +248,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
         <div className="hidden lg:block">
           <PhaseHeader
             label="SEMI FINAL 2"
-            dates="Jun 15 – 21"
+            dates="Jun 15 – 23"
             days="R2 vs R3"
             color="text-cyan-300"
           />
@@ -278,7 +278,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
             winner={sf1?.winner}
             pointsField="sf_points"
             variant="sf"
-            dateRange="JUN 15-21"
+            dateRange="JUN 15-23"
             seedLabelA="R1"
             seedLabelB="R4"
             testId={TEST_IDS.bracket.sf(1)}
@@ -294,7 +294,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
             winner={champion}
             pointsField="final_points"
             variant="final"
-            dateRange="JUN 22 - JUL 1"
+            dateRange="JUN 24 - JUL 1"
             testId={TEST_IDS.bracket.final}
           />
           <ChampionCard champion={champion} />
@@ -320,7 +320,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
       {/* Mobile fallback */}
       <div className="lg:hidden mt-8 space-y-5">
         <div className="text-center font-display tracking-[0.28em] text-cyan-300 text-xs">
-          SEMI FINALS · Jun 15 – 21
+          SEMI FINALS · Jun 15 – 23
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <MatchCard
@@ -330,7 +330,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
             winner={sf1?.winner}
             pointsField="sf_points"
             variant="sf"
-            dateRange="JUN 15-21"
+            dateRange="JUN 15-23"
             seedLabelA="R1"
             seedLabelB="R4"
             testId={TEST_IDS.bracket.sf(1) + "-mobile"}
@@ -342,14 +342,14 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
             winner={sf2?.winner}
             pointsField="sf_points"
             variant="sf"
-            dateRange="JUN 15-21"
+            dateRange="JUN 15-23"
             seedLabelA="R2"
             seedLabelB="R3"
             testId={TEST_IDS.bracket.sf(2) + "-mobile"}
           />
         </div>
         <div className="text-center font-display tracking-[0.28em] text-amber-300 text-xs mt-6">
-          FINAL · Jun 22 – Jul 1
+          FINAL · Jun 24 – Jul 1
         </div>
         <MatchCard
           match="FINAL"
@@ -358,7 +358,7 @@ const BracketGrid = ({ qualified, semiFinals, finalBlock, champion }) => {
           winner={champion}
           pointsField="final_points"
           variant="final"
-          dateRange="JUN 22 - JUL 1"
+          dateRange="JUN 24 - JUL 1"
           testId={TEST_IDS.bracket.final + "-mobile"}
         />
         <ChampionCard champion={champion} />
@@ -390,6 +390,18 @@ export default function BracketPage() {
       data-testid={TEST_IDS.bracket.page}
       className="max-w-[1400px] mx-auto px-4 sm:px-8 py-8 relative z-10"
     >
+      {/* Bonus Points Announcement */}
+      <div className="mb-4 rounded-xl border border-amber-500/40 bg-amber-500/[0.08] px-4 py-3 text-[12px] sm:text-sm text-amber-100 leading-relaxed animate-pulse">
+        <span className="text-amber-300 font-display tracking-wider">
+          BONUS POINTS ALERT
+        </span>{" "}
+        — On <span className="text-yellow-300 font-semibold">13 June & 14 June</span>,
+        every successful admission will earn an additional{" "}
+        <span className="text-yellow-300 font-bold">+50 BONUS POINTS</span>.
+        These bonus points will be added to the Quarter Final rankings and can be
+        crucial for securing a Top 4 qualification spot.
+     </div>
+
       <div className="rounded-xl border border-sky-500/40 bg-sky-500/[0.05] px-4 py-3 text-[12px] sm:text-sm text-sky-100/80 leading-relaxed">
         <span className="text-sky-300 font-display tracking-wider">
           OFFICIAL FIFA 2026 BRACKET PATH
