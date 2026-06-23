@@ -93,6 +93,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Shraddha", "leaderboard_name": "Shraddha Singh"},
             {"label": "Janhavi N.", "leaderboard_name": "Janhavi Nakshulwar"},
             {"label": "Sakshi G.", "leaderboard_name": "Sakshi Gade"},
+            {"label": "Mehak", "leaderboard_name": "Mehak Meena"},
         ],
     },
     
@@ -108,6 +109,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Gaurav", "leaderboard_name": "Gaurav Kadam"},
             {"label": "Amod", "leaderboard_name": "Amod Tripathi"},
             {"label":"Shruti S.", "leaderboard_name": "Shruti Singh"},
+            {"label": "Shruti C.", "leaderboard_name": "Shruti Chaturvedi"},
         ],
     },
     {
@@ -139,6 +141,7 @@ TEAMS: List[Dict[str, Any]] = [
             {"label": "Kajal", "leaderboard_name": "Kajal Tiwari"},
             {"label": "Ayesha B.", "leaderboard_name": "Ayesha Baig"},
             {"label": "Prateek S.", "leaderboard_name": "Prateek Samantaray"},
+            {"label": "Fatima ", "leaderboard_name": "Fatima Khan"},
             
         ],
     },
